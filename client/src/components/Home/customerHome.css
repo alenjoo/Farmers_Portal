@@ -1,0 +1,129 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+.customer-home {
+    position: relative;
+}
+
+.customer-home .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.customer-home .navbar-left {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Grow to take available space */
+    justify-content: flex-end; /* Align items to the left */
+}
+
+.customer-home .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fbfafa;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f9c312;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    padding-left: 40px; /* Adjust padding to accommodate the icon and increase input size */
+    width: calc(100% - 50px); /* Adjust width to increase input size */
+    height: 40px; /* Adjust height as needed */
+    border: 1px solid #ccc; /* Add border for input */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    font-size: 16px; /* Adjust font size */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* Adjust left position */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure the icon is above the input text */
+    color: #333; /* Icon color */
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(1px);
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: rgb(249, 243, 243);
+    padding: 20px;
+    animation: slideFromLeft 1s ease forwards; /* Apply animation */
+}
+
+.slide-content h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.slide-content p {
+    font-size: 52px;
+    margin-bottom: 10px;
+    font-family: var(--bs-body-font-family);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.constant-image {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    width: 100px; /* Adjust the width of the constant image */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1000; /* Ensure the image is above other content */
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

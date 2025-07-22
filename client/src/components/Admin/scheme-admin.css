@@ -1,0 +1,200 @@
+.admin-scheme {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #e0e0e0;
+    padding-left: 17%; /* Adjusted for the width of the admin-navbar */
+}
+
+
+.scheme-container {
+    width: 70%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.scheme-table {
+    width: 100%; /* Adjusted to fit the screen width */
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.scheme-table th,
+.scheme-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.scheme-table th {
+    background-color: white;
+    color: #333;
+    text-align: left;
+}
+
+.scheme-table tr:hover {
+    background-color: #ddd;
+}
+
+.scheme-table h3 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.scheme-table p {
+    color: #555;
+    font-size: 16px;
+    background-color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.para {
+    background-color: white;
+    width: 100%; /* Adjusted to fit the screen width */
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination p {
+    margin-left: 10px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.entry {
+    margin-left: 10px;
+}
+
+.button-approve {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.scheme-input-admin {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+    text-align: center;
+    width: 80%; /* Adjusted to fit the screen width */
+    margin-left: auto; /* Center the form horizontally */
+    margin-right: auto; /* Center the form horizontally */
+}
+
+.title h3 {
+    top: 30px;
+    text-align: left;
+    margin-left: 20%;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.scheme-input-admin h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-top: 80px;
+    border-radius: 30px;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.input-group textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.scheme-input-admin button[type="submit"] {
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.scheme-input-admin button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.admin-scheme-accept{
+  
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 9px;
+    transition: background-color 0.3s ease;
+  } 
+
+  .admin-scheme-reject{
+  
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 9px;
+    transition: background-color 0.3s ease;
+    margin-left: 3px;
+  } 

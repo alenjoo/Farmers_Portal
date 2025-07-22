@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.login-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6fc5d4;
+    background-image: url(../Assets/guru-moorthy-gokul-ltAVfxVps3o-unsplash.jpg);
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.full-login {
+    position: relative; /* Ensure proper positioning of the overlay */
+    width: 70%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.login-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;/* Semi-transparent background color */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the overlay */
+}
+
+
+
+.login-container1 .text-part {
+    width: 50%;
+    padding: 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+    right: 20%;
+  }
+  
+ .login-container1 .text-part h2,
+  .text-part p {
+    opacity: 10; /* Initially hide the text */
+    text-align: center;
+    transform: translateY(5x); /* Move the text downwards */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+     /* Smooth transition */
+    
+  }
+
+  .login-container1 .text-part h2 {
+    position: absolute;
+   
+    left: 2%;
+    top: 2%;
+  }
+  
+  .login-container1 .p1-login {
+    position: absolute;
+  
+    left: 0%;
+    top: 50%; /* Adjusted top position for spacing */
+  }
+  
+  .login-container1 .p2-login {
+    position: absolute;
+    left: 0%;
+    top: 80%; /* Adjusted top position for spacing */
+  }
+  
+ .login-container1 .text-part.show {
+    animation: slideIn 2s forwards; /* Apply the slide animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(70px); /* Start from below */
+      opacity: 0; /* Initially hidden */
+    }
+    100% {
+      transform: translateY(0); /* Slide to normal position */
+      opacity: 2; /* Fully visible */
+    }
+  }
+  
+
+
+ 
+.login2-container{
+    opacity: 1; /* Change opacity to 1 to make it visible */
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Adjust the top position */
+    left: 80%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    width: 25%;
+    height: 350px; 
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.loginform form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loginform h1 {
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: rgb(39, 108, 165);
+}
+
+.login-container2 .login-input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.loginform .login-input-box input {
+    width: 90%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+
+
+.loginform [type='submit'] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loginform [type='submit']:hover {
+    background-color: #166fe5;
+}
+.loginform [type='submit']:hover {
+    background-color:none;
+    border: none;
+    cursor: pointer;
+}
+
+.login-reglink p {
+    font-size: 14px;
+}
+
+
+
+.login-title h1 {
+  position: absolute;
+  left: 2%;
+  top: 2%;
+    color: #333333;
+    
+}
+
+.user-icon{
+ position: absolute;
+ top:32%; 
+ left: 78%;  
+}
+
+.password-icon{
+    position: absolute;
+    left:78%;
+    top:48%; 
+   }

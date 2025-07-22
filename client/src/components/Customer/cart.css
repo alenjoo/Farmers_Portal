@@ -1,0 +1,292 @@
+.view-container {
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Establish positioning context for absolutely positioned children */
+}
+
+.blue-container {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: #171f3a;
+  }
+  
+  .blue-container .cart-bid-heading {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .blue-container .cart-icon-wrapper,
+  .blue-container .cart-icon-wrapper-shopping,
+  .blue-container .card-icon-wrapper-shopping {
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color: #08c451;
+  }
+  
+  .blue-container .bag-icon {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .blue-container .cart-icon {
+    color: white;
+    font-size: 60px;
+  }
+  .blue-container .card-icon {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .blue-container .cart-icon-wrapper{
+    left:20%;
+    top : 40%;
+    width: 60px;
+    height: 60px;
+  }
+  .blue-container .cart-icon-wrapper-shopping {
+    left: 45%;
+    top:37%;
+    width: 90px;
+    height: 90px;
+  }
+  .blue-container .card-icon-wrapper-shopping{
+    left:70%;
+    top : 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color:#343854;
+  }
+  .blue-container .cart-green-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(20% + 60px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color: #08c451;
+  }
+  
+  .blue-container .cart-ash-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(48% + 43px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color:#343854;
+  }
+  
+  
+.blue-cart-heading {
+    position: absolute;
+    top: 17%;
+    left: 48%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 50px;
+}
+
+.blue-container .blue-review-heading {
+    position: absolute;
+    top: 62%;
+    left: 48%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .blue-container .blue-checkout-heading {
+    position: absolute;
+    top: 60%;
+    left: 72%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+  
+.green-container .white-container {
+    height: 50%;
+    width: 100%;
+    background-color: #f4f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    padding: 20px;
+}
+
+.green-container {
+    margin-left: 10%;
+    position: absolute;
+    bottom: 10%; /* Align with the bottom of the viewport */
+    height: 50%; /* 75% of the viewport height */
+    width: 60%; /* Full width */
+    background-color: #ffffff;
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 40px;
+}
+
+
+.green-container  .cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.green-container .cart-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.green-container .cart-item:hover {
+    transform: translateY(-5px);
+}
+
+.green-container .cart-item-content {
+    display: flex;
+    align-items: center;
+}
+
+.green-container .cart-item-details {
+    flex: 1;
+}
+
+.green-container .cart-item-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.green-container .cart-item-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-container .cart-item-actions button:hover {
+    background-color: #0056b3;
+}
+
+.green-container .cart-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.green-container .bid-input {
+    margin-top: 20px;
+}
+
+.green-container .input-bid {
+    width: 150px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.green-container .input-bid:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+
+
+.green-container button {
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+.product-details .details {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.product-details .detail {
+    flex: 1;
+    
+    color: #6e7071;
+}
+
+.product-details .detail h3 {
+    margin: 0;
+   
+    margin-left: 150px;
+}
+
+.product-details .detail p {
+    margin: 0;
+    margin-bottom: 10px;
+    color:#111;
+    font-size: large;
+    margin-left: 150px;
+}
+
+
+.green-container .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.green-container .button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4b3dde;
+    color: #fff;
+}
+.green-container .button-container .cartbid{
+   margin-left: 50%;
+}
+
+.bid-input .cart-submit{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #4b3dde;
+    color: #fff;
+}
+
+
+.white-container .whitecarth4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.white-container .whitecartp {
+    font-size: 14px;
+    color: #6c757d; /* Dark gray color */
+}
+
+
+

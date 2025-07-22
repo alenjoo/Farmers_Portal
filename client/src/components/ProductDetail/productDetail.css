@@ -1,0 +1,139 @@
+/* Container for each product detail */
+.searchproduct-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for product information */
+.searchproduct-info {
+  flex: 1;
+}
+
+/* Product name styling */
+.searchproduct-info h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Styling for other product details */
+.searchproduct-info p {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+/* Container for product images */
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for product images */
+.image-container img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for bid input field and button */
+.bid-input {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for bid input field */
+.input-bid {
+  width: 100px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Styling for bid submit button */
+.bid-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for bid submit button */
+.bid-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Container for product images */
+.image-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling if images overflow */
+  padding: 10px; /* Add padding to container */
+  margin-bottom: 20px; /* Add margin to create space below */
+}
+
+/* Styling for product images */
+.image-container img {
+  width: 300px; /* Set the width of each image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between images */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+/* Hide horizontal scrollbar */
+.image-container::-webkit-scrollbar {
+  display: none;
+}
+.location-filter {
+ 
+  padding: 10px;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  background-color: #a4abb2;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Vertically center the content */
+}
+
+.location-filter input[type="text"]{
+   height: 30px;
+   margin-right:5px;
+   
+}
+.location-filter button{
+  height: 32px;
+  width: 50px;
+  background-color: #666;
+  margin-right:2%;
+}
+.bid-input button{
+  
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }  
+  .bid-input input{
+    margin-left: 5px;
+  }

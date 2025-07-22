@@ -1,0 +1,80 @@
+.winner-table {
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #e0e0e0; /* Change background color for the content area */
+    border-radius: 10px; /* Add border radius for a nicer look */
+    padding-bottom: 20px; /* Add padding at the bottom of the container */
+  }
+  
+  .winner-table table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Change background color for the table */
+    margin-top: 20px; /* Add margin to the top of the table */
+    margin-bottom: 20px; /* Add margin to the bottom of the table */
+  }
+  
+  .winner-table th,
+  .winner-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .winner-table th {
+    background-color: white;
+    color: #333;
+    text-align: left;
+  }
+  
+  .winner-table tr:hover {
+    background-color: #ddd;
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .pagination p {
+    margin-left: 10px;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .entry {
+    margin-left: 10px;
+  }
+  
+  .button-approve {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }

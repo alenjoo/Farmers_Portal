@@ -1,0 +1,64 @@
+.bid-history-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bid-history-table th, .bid-history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .bid-history-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+
+  .winner-row {
+    background-color: #d0f0c0; /* Light green background */
+  }
+
+  .interested-row {
+    background-color: lightgreen; /* Set background color to green for rows with status Interested */
+  }
+  
+
+  /* Bid-History.css */
+
+/* Styles for the back button */
+.button-back {
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 25px; /* Rounded corners */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change background color on hover */
+.button-back:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the update button */
+.bid-history-update {
+  background-color: #28a745; /* Green background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; 
+  margin-top: 50px;
+ margin-left: 25px;
+}
+
+/* Change background color on hover */
+.bid-history-update:hover {
+  background-color: #218838;
+}

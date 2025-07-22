@@ -1,0 +1,255 @@
+.profile-container-farmer {
+    height: 100vh;
+    /* Change flex direction to column */
+    position: relative; /* Make it relative to allow absolute positioning of children */
+  }
+  
+  .profile-container1-farmer {
+    position: relative;
+      height: 50%;
+      width: 100%;
+      color:#ffffff;
+      background-color: #2d345d;
+  }
+  
+  .profile-container2-farmer {
+    
+      position: absolute;
+      /* Align with the bottom of the viewport */
+      height: 50%; /* 75% of the viewport height */
+      width: 100%; /* Full width */
+      background-color: #F0F0F0;
+  }
+  
+  /* Rest of your CSS remains unchanged */
+  
+  .dropdown-farmer {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: #F0F0F0; /* Set background color to black */
+    width: 15%;/* Adjust width to fill the container minus some padding */
+    height: calc(100% - 40px); /* Adjust height to fill the container minus some padding */
+    z-index: 2; /* Ensure the dropdown is above the content */
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  .dropdown-content-farmer {
+    display: block;
+    position: absolute;
+    background-color: #fff; /* Set background color to black */
+    width: calc(100% - 40px); /* Adjust width to fill the container minus some padding */
+    max-height: calc(100% - 40px); /* Limit height to 100% of parent height minus some padding */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    padding: 10px; /* Add padding for inner content */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Add rounded corners */
+  }
+  
+  
+  .dropdown-content-farmer a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px; /* Add margin bottom for spacing between items */
+  }
+  
+  .dropdown-content-farmer a:hover {
+    background-color: #f1f1f1;
+  }
+  .profile-container-farmer .content-farmer {
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    left: 15%; 
+    background-color: #F0F0F0 ;
+  }
+ 
+  
+  .profile-container-farmer .row-farmer {
+    display: flex;
+  }
+  
+  .profile-container-farmer .column-farmer {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .profile-container-farmer label {
+    margin-bottom: 5px;
+  }
+  
+  .profile-container-farmer input[type="text"],
+  .profile-container-farmer input[type="email"],
+  .profile-container-farmer input[type="tel"],
+  .profile-container-farmer textarea,
+  .profile-container-farmer select {
+    padding: 15px; /* Increase padding for taller input boxes */
+    margin-bottom: 15px; /* Increase margin bottom */
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 30px); /* Adjust width to fill the container minus padding */
+    background-color: #ffffff; /* Set background color to white */
+    color: #000000; /* Set text color to black */
+  }
+  
+  .profile-container-farmer input[type="text"]:focus,
+  .profile-container-farmer input[type="email"]:focus,
+  .profile-container-farmer input[type="tel"]:focus,
+  .profile-container-farmer textarea:focus,
+  .profile-container-farmer select:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px #1ba5be; /* Add custom focus effect */
+  }
+  
+  
+  
+  
+  input[type="submit"]:hover {
+    background-color: #444;
+  }
+  
+  
+  .profile-container2-farmer .profile-user-icon-farmer {
+    /* Adjust the icon's positioning */
+    position: absolute;
+    top: 29%;
+    transform: translateY(-22%);
+    left: 7px; /* Adjust as needed */
+   
+   
+  }
+  
+  .profile-container2-farmer .profile-address-icon-farmer {
+    /* Adjust the icon's positioning */
+    position: absolute;
+    top: 55%;
+    transform: translateY(-53%);
+    left: 7px; /* Adjust as needed */
+  
+  
+  }
+  
+  .profile-container2-farmer .profile-bank-icon-farmer{
+      /* Adjust the icon's positioning */
+      position: absolute;
+      top: 79%;
+      transform: translateY(-82%);
+      left: 7px; /* Adjust as needed */
+    
+    
+  }
+  .profile-container2-farmer .profile-logout-icon-farmer{
+    /* Adjust the icon's positioning */
+    position: absolute;
+    top: 104%;
+    transform: translateY(-82%);
+    left: 7px; /* Adjust as needed */
+  
+  
+}
+  .profile-h3-farmer{
+    color:  #7e7e7e;
+  }
+  
+  .address-h3-farmer{
+    color:  #7e7e7e;
+  }
+  
+  
+  .profile1-h4-farmer {
+    position: relative;
+    top: 2%;
+    left: 1%;
+  }
+  
+  
+  .profile1-h1-farmer {
+    position: relative;
+    top: 40%;
+    left: 2%;
+  }
+  .profile1-edit-farmer {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #1ba5be;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .profile1-search-div-farmer {
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    width: 15%;
+  }
+  
+  .profile1-search-farmer {
+    width: 100%;
+    height: 10px; /* Set the height of the search input */
+    padding: 5px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    outline: none; /* Remove default input outline */
+    font-size: 14px; /* Adjust font size */
+    background-color: #2d345d; /* Set the background color */
+  }
+  
+  
+  /* Placeholder styling */
+  .profile1-search-farmer::placeholder {
+    color: #999; /* Placeholder text color */
+  }
+  
+  .profile1-search-icon-farmer {
+    position: absolute;
+    top: 30%;
+    right: 10px; /* Adjust the distance from the right */
+    transform: translateY(-30%);
+    color: #111;
+    cursor: pointer; /* Adjust the color of the icon */
+  
+  }
+  
+  .profile1-description-farmer{
+    position: relative;
+    top: 43%;
+    left: 2%;
+  }
+  
+  .profile-account-farmer {
+    border-bottom: 2px solid #ccc; /* Add bottom border */
+    padding-bottom: 10px; 
+    margin-left: 15px;/* Add padding to separate from content */
+  }
+
+
+  .profile2-address-submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px; /* Adjusted margin */
+    cursor: pointer;
+    border-radius: 5px;
+    width: 12%; /* Set button width to 100% */
+  }
+  
+  .profile2-address-submit:hover {
+    background-color: #45a049;
+  }

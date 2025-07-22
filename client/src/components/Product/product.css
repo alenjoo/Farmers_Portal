@@ -1,0 +1,194 @@
+.view-container-product {
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Establish positioning context for absolutely positioned children */
+}
+
+.blue-container-product {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    background-color: #171f3a;
+  }
+  
+  .blue-container-product .cart-bid-heading {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .blue-container-product .cart-icon-wrapper,
+  .blue-container-product .cart-icon-wrapper-shopping,
+  .blue-container-product .card-icon-wrapper-shopping {
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color: #08c451;
+  }
+  
+  .blue-container-product .bag-icon {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .blue-container-product .cart-icon {
+    color: white;
+    font-size: 60px;
+  }
+  .blue-container-product .card-icon {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .blue-container-product .cart-icon-wrapper{
+    left:20%;
+    top : 40%;
+    width: 60px;
+    height: 60px;
+  }
+  .blue-container-product .cart-icon-wrapper-shopping {
+    left: 45%;
+    top:37%;
+    width: 90px;
+    height: 90px;
+  }
+  .blue-container-product .card-icon-wrapper-shopping{
+    left:70%;
+    top : 40%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color:#343854;
+  }
+  .blue-container-product .cart-green-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(20% + 60px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color: #08c451;
+  }
+  
+  .blue-container-product .cart-ash-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(48% + 43px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color:#343854;
+  }
+  
+  
+.blue-container-product .blue-cart-heading {
+    position: absolute;
+    top: 17%;
+    left: 48%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 50px;
+}
+
+.blue-container-product .blue-review-heading {
+    position: absolute;
+    top: 62%;
+    left: 48%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .blue-container-product .blue-checkout-heading {
+    position: absolute;
+    top: 60%;
+    left: 72%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 16px;
+  }
+.green-container-product {
+    margin-left: 10%;
+    position: absolute;
+    bottom: 10%; /* Align with the bottom of the viewport */
+    height: 50%; /* 75% of the viewport height */
+    width: 60%; /* Full width */
+    background-color: #ffffff;
+    z-index: 1; /* Ensure it appears above other content */
+    border-radius: 40px;
+}
+
+.green-container-product h1 {
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.green-container-product .product-details{
+    height:50%;
+}
+.green-container-product  .product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.green-container-product  .product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.green-container-product .product-item:hover {
+    transform: translateY(-5px);
+}
+
+.green-container-product .product-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+
+.green-container-product .product-button-container button {
+    background-color: #4b3dde;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-container-product .product-button-container button:hover {
+    background-color: #3a2ab7;
+}
+
+
+.green-container-product .time-left-product{
+    position: absolute;
+    left:20%;
+}
+
+.green-container-product .product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 30px; /* Increase padding */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 300px; /* Allow height to adjust based on content */
+}

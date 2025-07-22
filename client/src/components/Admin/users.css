@@ -1,0 +1,124 @@
+/* users.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.page-container {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.admin-navbar {
+    background-color: #222e3c;
+    color: #fff;
+    padding: 10px;
+}
+
+.admin-navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-navbar-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.admin-navbar-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.users_available {
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #e0e0e0; /* Change background color for the content area */
+    border-radius: 10px; /* Add border radius for a nicer look */
+    padding-bottom: 20px; /* Add padding at the bottom of the container */
+}
+
+.users_available table {
+    width: 90%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Change background color for the table */
+    margin-top: 20px; /* Add margin to the top of the table */
+    margin-bottom: 20px; /* Add margin to the bottom of the table */
+}
+
+.users_available th, .users_available td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.users_available th {
+    background-color: white;
+    color: #333;
+    text-align: left;
+}
+
+.users_available tr:hover {
+    background-color: #ddd;
+}
+
+.users_available h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #e0e0e0; /* Change background color for the h2 */
+    padding: 10px; /* Add padding for a nicer look */
+    border-radius: 5px; /* Add border radius for a nicer look */
+}
+
+.users_available p {
+    color: #555;
+    font-size: 16px;
+    background-color: white; 
+    margin-left: 10px;/* Change background color for the p tag */
+    margin-bottom: 20px;
+     /* Add margin to the bottom of the p tag */
+}
+.para{
+   background-color: white;
+    width: 90%;
+ 
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .pagination p {
+    margin-left: 10px;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+
+  .entry{
+    margin-left: 10px;
+  }
+

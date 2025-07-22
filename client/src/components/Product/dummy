@@ -1,0 +1,272 @@
+import React ,{useEffect,useState }from 'react'
+import { IoBagOutline } from "react-icons/io5";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { CiCreditCard1 } from "react-icons/ci";
+import { Link } from 'react-router-dom';
+import "./checkout.css";
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
+
+export const Checkout = () => {
+    const { productId } = useParams();
+    const [address, setAddress] = useState({
+        homeaddress: '',
+        panchayath: '',
+        district: '',
+        pincode: '',
+      });
+    const [product,setProduct] = useState ({
+        name:'',
+        price:'',
+
+    });
+      useEffect(() => {
+        // Function to fetch product and login details
+        const fetchData = async () => {
+            try {
+                // Fetch product details
+                const productResponse = await axios.get(`http://localhost:3001/products/checkou/${productId}`);
+                const productData = productResponse.data;
+                setProduct(productData);
+                
+                // Extract loginId from productData
+                const loginId = productData.loginId;
+    
+                // Fetch address details based on loginId
+                const addressResponse = await axios.get(`http://localhost:3001/address/checkoutaddress/${loginId}`);
+                const addressData = addressResponse.data;
+    
+                // Set the address state with the fetched data
+                setAddress(addressData);
+
+              
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+    
+        // Call fetchData function
+        fetchData();
+    }, [productId]);
+    
+  return (
+    <div className="view-container2">
+     <div className="blue-container2">
+      <div className="cart-icon-wrapper2">
+      <Link to="/Bid">
+        <IoBagOutline className="bag-icon2" />
+        </Link>
+      </div>
+      <div className="cart-green1-line"></div> 
+      <div className="cart-icon-wrapper-shopping2">
+     
+    <MdOutlineShoppingCart className="cart-icon2" />
+     
+      </div>
+        
+      <div className="cart-green2-line"></div> 
+      <div className="card-icon-wrapper-shopping2">
+        < CiCreditCard1 className="card-icon2" />
+      </div>
+     
+      <h2 className="cart-bid-heading2">Bid</h2>
+      <h2 className="blue-cart-heading2">Checkout</h2>
+      <h2 className="blue-review-heading2">Review</h2>
+      <h2 className="blue-checkout-heading2">Check Out</h2>
+      </div>
+    <div className="marblecontainer">
+      <div className="address-box-checkout">
+        <h3 className="address-details-checkout">Address Details</h3>
+        <div className="address-input-box-checkout">
+           < label className='address-label-checkout'> Address</label>
+            <input type="text" className="input-checkout" value={address.homeaddress} readOnly/>
+
+        </div>
+        <div className="address-input-box-checkout">
+           < label className='address-label-checkout'> Panchayath</label>
+            <input type="text" className="input-checkout" value={address.panchayath} readOnly/>
+
+        </div>
+        <div className="address-input-box-checkout">
+           < label className='address-label-checkout'> District</label>
+            <input type="text" className="input-checkout" value={address.district} readOnly/>
+
+        </div>
+        <div className="address-input-box-checkout">
+           < label className='address-label-checkout'> Pincode</label>
+            <input type="text" className="input-checkout" value={address.pincode} readOnly/>
+
+        </div>
+
+        
+      </div>
+      <div className="order-box-checkout">
+  <h3 className="order-details-checkout">Your Order</h3>
+  <div className="label-checkout">
+    <div className="product-label">
+      <label className='order-label-checkout'>Product</label>
+      <div className="product-name-checkout1">{product.name}</div>
+    </div>
+    <div className="price-label">
+      <label className='address-label-checkout'>Price</label>
+      <div className="product-name-checkout2">{product.price}</div>
+    </div>
+  </div>
+</div>
+
+
+
+      <div className="payment-checkout">
+  <h3 className="payment-heading">Payment</h3>
+  <div className="payment-options">
+  <label className="payment-option">
+    <input type="radio" name="payment" value="online" />
+    <p>Online Payment</p>
+  </label>
+  <p className="payment-description">Please note that the farmer will only accept orders after receiving payment through the online payment method. This ensures a secure and streamlined transaction process, allowing for smoother order fulfillment and delivery.</p>
+  <label className="payment-option">
+    <input type="radio" name="payment" value="cash" />
+    <p>Cash on delivery</p>
+  </label>
+</div>
+
+
+  <button className="place-order-button">Place Order</button>
+</div>
+
+
+    </div>
+
+
+   
+    
+</div>
+  )
+}
+
+
+
+
+
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import { connectToDB } from "./config/db.js";
+import registerRoutes from "./routes/register.js";
+import loginRoutes from "./routes/login.js";
+import uploadRoutes from "./routes/upload.js";
+import productRoutes from "./routes/product.js";
+import displayRouter from "./routes/display.js";
+import cartRoutes from "./routes/cartController.js";
+import adminbidRoutes from "./routes/adminbid.js";
+import adminbidacceptRoutes from "./routes/adminbidaccept.js";
+import { getUsers } from "./controllers/users.js";
+import bidRoutes from "./routes/bidtable.js";
+import admincart from "./routes/admincart.js";
+import profileRoutes from "./routes/profile.js";
+import addressRoutes from "./routes/address.js";
+
+const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/uploads", express.static("uploads"));
+
+connectToDB();
+
+app.use("/register", registerRoutes);
+app.use("/login", loginRoutes);
+app.use("/upload", uploadRoutes);
+app.use("/products", productRoutes);
+app.use("/display", displayRouter);
+app.use("/cart", cartRoutes);
+app.use("/pending-requests", adminbidRoutes);
+app.get("/approved-products", adminbidacceptRoutes);
+app.get("/users", getUsers);
+app.use("/bids", bidRoutes);
+app.use("/admin-cart", admincart);
+app.use("/profile", profileRoutes);
+app.use("/address", addressRoutes);
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+
+
+export const selectWinnerAndInsert = (req, res) => {
+  const { productId } = req.params;
+
+  // Check if a winner already exists for the given product ID
+  const checkWinnerQuery = `
+    SELECT * 
+    FROM winner 
+    WHERE productid = ?
+  `;
+
+  db.query(checkWinnerQuery, [productId], (checkErr, checkResults) => {
+    if (checkErr) {
+      console.error("Error checking winner:", checkErr);
+      return res.status(500).send("Internal server error");
+    }
+
+    // If a winner already exists for the product ID, send alert message
+    if (checkResults.length > 0) {
+      return res.status(200).send("Winner already selected for this product");
+    }
+
+    // If no winner exists, proceed with selecting and inserting the winner
+    const selectWinnerQuery = `
+      SELECT loginid, price 
+      FROM bid 
+      WHERE productid = ? 
+      ORDER BY price DESC 
+      LIMIT 1
+    `;
+
+    db.query(selectWinnerQuery, [productId], (err, results) => {
+      if (err) {
+        console.error("Error selecting winner:", err);
+        return res.status(500).send("Internal server error");
+      }
+
+      const winnerData = results[0];
+      if (!winnerData) {
+        return res.status(404).send("No bids found for the product");
+      }
+
+      const { loginid, price } = winnerData;
+
+      const insertQuery = `
+        INSERT INTO winner (loginid, productid, username, interested)
+        VALUES (?, ?, (SELECT username FROM login WHERE login_id = ?), true)
+      `;
+
+      db.query(insertQuery, [loginid, productId, loginid], (insertErr) => {
+        if (insertErr) {
+          console.error("Error inserting winner:", insertErr);
+          return res.status(500).send("Internal server error");
+        }
+
+        res.status(200).send("Winner selected and inserted successfully");
+      });
+    });
+  });
+};
+
+
+   try {
+     const winnerResponse = await axios.post(
+       `http://localhost:3001/bids/winner`,
+       {
+         loginId: loginId,
+         productId: productId,
+       }
+     );
+     console.log("Winner endpoint response:", winnerResponse.data);
+   } catch (winnerError) {
+     console.error("Error placing winner:", winnerError);
+     alert("Error placing winner. Please try again later.");
+   }

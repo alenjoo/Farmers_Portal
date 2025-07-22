@@ -1,0 +1,40 @@
+.farmer-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.farmer-home .navbar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-name {
+    margin: 0;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #ddd;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.leftb {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.bottom-name {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5
+}

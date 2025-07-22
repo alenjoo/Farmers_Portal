@@ -1,0 +1,77 @@
+
+  
+  .apply-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set minimum height to 100% of viewport height */
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+
+  .main-content {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background-color: #ffffff; /* Set background color for the form container */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for a subtle effect */
+  }
+  
+  .apply-title {
+    text-align: center;
+    color: #4CAF50; /* Text color for the title */
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+  }
+  
+  .apply-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .apply-button:hover {
+    background-color: #45a049;
+  }
+  
+  .form-group.highlighted label {
+    color: #4CAF50; /* Highlighted label color */
+  }
+  
+  .form-group.highlighted .form-input {
+    border-color: #4CAF50; /* Highlighted input border color */
+  }
+  .form-group2 label{
+    padding: 30px;
+    margin-left: 20%;
+    
+  }
+  .form-group2{
+    padding: 10px;
+  }

@@ -1,0 +1,206 @@
+.view-container3{
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    background-color: #fafafb; /* Establish positioning context for absolutely positioned children */
+}
+
+.blue-container3{
+    position: relative;
+    height: 40%;
+    width: 100%;
+    
+}
+
+.blue-container3 .cart-green1-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(20% + 60px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color: #08c451;
+  }
+
+
+
+
+
+
+
+.blue-container3 .cart-green3-line {
+    position: absolute;
+    top: calc(45% + 5px); /* Position the line halfway between the icons */
+    left: calc(45% + 43px); /* Position the line at the right edge of the first icon */
+    height: 2px;
+    width: calc(26% - 60px); /* Set the width of the line to span the gap between the icons */
+    background-color: #08c451;
+  }
+
+  .blue-container3 .cart-icon-wrapper3,
+  .blue-container3 .cart-icon-wrapper-shopping3,
+  .blue-container3 .card-icon-wrapper-shopping3 {
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+    background-color: #08c451;
+  }
+  
+  .blue-container3 .bag-icon3 {
+    color: white;
+    font-size: 36px;
+  }
+  
+  .blue-container3 .cart-icon3 {
+    color: white;
+    font-size: 36px;
+  }
+  .blue-container3 .card-icon3 {
+    color: white;
+    font-size: 60px;
+  }
+  
+  .blue-container3 .cart-icon-wrapper3{
+    left:20%;
+    top : 40%;
+    width: 60px;
+    height: 60px;
+  }
+  .blue-container3 .cart-icon-wrapper-shopping3 {
+    left: 45%;
+    top:40%;
+    width: 60px;
+    height: 60px;
+  }
+  .blue-container3 .card-icon-wrapper-shopping3{
+    left:69%;
+    top : 37%;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50%;
+ 
+  }
+
+  .blue-cart-heading3 {
+    position: absolute;
+    top: 0%;
+    left: 48%;
+    transform: translateX(-50%);
+    color: #111;
+    font-size: 50px;
+}
+
+.blue-container3 .blue-review-heading3 {
+    position: absolute;
+    top: 62%;
+    left: 47%;
+    transform: translateX(-50%);
+    color: #343854;
+    font-size: 16px;
+  }
+
+  .blue-container3 .blue-checkout-heading3 {
+    position: absolute;
+    top: 67%;
+    left: 72%;
+    transform: translateX(-50%);
+    color: #111;
+    font-size: 16px;
+  }
+
+  .blue-container3 .cart-bid-heading3 {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    transform: translateX(-50%);
+    color: #343854;
+    font-size: 16px;
+  }
+  
+
+  .view-container3 .marblecontainer{
+    display: flex;
+  
+    position: absolute;
+    bottom: 0%; /* Align with the bottom of the viewport */
+    height: 60%; /* 75% of the viewport height */
+    width: 100%; /* Full width */
+    background-color: #ededee;
+    
+    border-radius: 40px;
+  }
+
+  
+  
+  .view-container3 .address-box-checkout {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    height: 220px;
+    position: relative;
+    left: 15%;
+    top: 5%;
+    border-radius: 30px;
+  }
+  
+  .view-container3 .address-input-box-checkout {
+    margin-bottom: 15px;
+  }
+
+  .view-container3 .input-checkout {
+    width: calc(100% - 10px);
+    padding: 10px;
+    background-color: #ededee;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .view-container3 .address-details-checkout {
+    margin-bottom: 15px;
+    color: #ffbe00;
+  }
+  
+
+
+
+  .view-container3 .label-checkout {
+    display: flex;
+    justify-content: space-between; /* Align items with space between them */
+  }
+  
+  .view-container3 .order-label-checkout, .address-label-checkout {
+    color: #111; /* Adjust color if needed */
+  }
+  
+  .view-container3 .order-box-checkout3 {
+    display: flex;
+    flex-direction: column; /* Align items as a column */
+    background-color: white;
+    padding: 20px;
+    width: 350px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    position: absolute;
+    left: 40%; /* 22% - 5% (to the left of address-box-checkout) - width */
+    top: 5%;
+    border-radius: 30px;
+  }
+  
+  .view-container3 .order-details-checkout {
+    color: #5044de;
+    margin-bottom: 15px; /* Add margin bottom for spacing */
+  }
+  .order-box-checkout3 .product-name-checkout2{
+    margin-top: 30px;
+  }
+
+  .order-box-checkout3 .product-name-checkout1{
+    margin-top: 30px;
+  }

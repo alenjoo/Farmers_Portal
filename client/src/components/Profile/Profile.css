@@ -1,0 +1,380 @@
+.profile-container {
+  height: 100vh;
+  /* Change flex direction to column */
+  position: relative; /* Make it relative to allow absolute positioning of children */
+}
+
+.profile-container1 {
+  position: relative;
+    height: 50%;
+    width: 100%;
+    color:#ffffff;
+    background-color: #2d345d;
+}
+
+.profile-container2 {
+  
+    position: absolute;
+    /* Align with the bottom of the viewport */
+    height: 50%; /* 75% of the viewport height */
+    width: 100%; /* Full width */
+    background-color: #F0F0F0;
+}
+
+/* Rest of your CSS remains unchanged */
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background-color: #F0F0F0; /* Set background color to black */
+  width: 15%;/* Adjust width to fill the container minus some padding */
+  height: calc(100% - 40px); /* Adjust height to fill the container minus some padding */
+  z-index: 2; /* Ensure the dropdown is above the content */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #fff; /* Set background color to black */
+  width: calc(100% - 40px); /* Adjust width to fill the container minus some padding */
+  max-height: calc(100% - 40px); /* Limit height to 100% of parent height minus some padding */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  padding: 10px; /* Add padding for inner content */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px; /* Add margin bottom for spacing between items */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.profile-container .content {
+  width: 80%;
+  padding: 20px;
+  position: absolute;
+  left: 15%; 
+  background-color: #F0F0F0 ;
+}
+.profile-container .form-container {
+  margin-top: 20px;
+}
+
+.profile-container .row {
+  display: flex;
+}
+
+.profile-container .column {
+  flex: 1;
+  padding: 10px;
+}
+
+.profile-container label {
+  margin-bottom: 5px;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="tel"],
+.profile-container textarea,
+.profile-container select {
+  padding: 15px; /* Increase padding for taller input boxes */
+  margin-bottom: 15px; /* Increase margin bottom */
+  border: none;
+  border-radius: 5px;
+  width: calc(100% - 30px); /* Adjust width to fill the container minus padding */
+  background-color: #ffffff; /* Set background color to white */
+  color: #000000; /* Set text color to black */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px #1ba5be; /* Add custom focus effect */
+}
+
+
+
+
+input[type="submit"]:hover {
+  background-color: #444;
+}
+
+
+.profile-container2 .profile-user-icon {
+  /* Adjust the icon's positioning */
+  position: absolute;
+  top: 29%;
+  transform: translateY(-22%);
+  left: 7px; /* Adjust as needed */
+ 
+ 
+}
+
+.profile-container2 .profile-address-icon {
+  /* Adjust the icon's positioning */
+  position: absolute;
+  top: 54%;
+  transform: translateY(-53%);
+  left: 7px; /* Adjust as needed */
+
+
+}
+
+.profile-container2 .profile-logout-icon{
+    /* Adjust the icon's positioning */
+    position: absolute;
+    top: 134%;
+    transform: translateY(-82%);
+    left: 7px; /* Adjust as needed */
+  
+  
+}
+
+.profile-container2 .profile-review-icon{
+  /* Adjust the icon's positioning */
+  position: absolute;
+  top: 106%;
+  transform: translateY(-82%);
+  left: 7px; /* Adjust as needed */
+
+
+
+  
+}
+
+.profile-container2 .profile-cart-icon{
+  /* Adjust the icon's positioning */
+  position: absolute;
+  top: 79%;
+  transform: translateY(-82%);
+  left: 7px; /* Adjust as needed */
+
+
+}
+.profile-h3{
+  color:  #7e7e7e;
+}
+
+.address-h3{
+  color:  #7e7e7e;
+}
+
+
+.profile1-h4 {
+  position: relative;
+  top: 2%;
+  left: 1%;
+}
+
+
+.profile1-h1 {
+  position: relative;
+  top: 40%;
+  left: 2%;
+}
+.profile1-edit {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: #1ba5be;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.profile1-search-div {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  width: 15%;
+}
+
+.profile1-search {
+  width: 100%;
+  height: 10px; /* Set the height of the search input */
+  padding: 5px; /* Add padding for better appearance */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  outline: none; /* Remove default input outline */
+  font-size: 14px; /* Adjust font size */
+  background-color: #2d345d; /* Set the background color */
+}
+
+
+/* Placeholder styling */
+.profile1-search::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+.profile1-search-icon {
+  position: absolute;
+  top: 30%;
+  right: 10px; /* Adjust the distance from the right */
+  transform: translateY(-30%);
+  color: #111;
+  cursor: pointer; /* Adjust the color of the icon */
+
+}
+
+.profile1-description{
+  position: relative;
+  top: 43%;
+  left: 2%;
+}
+
+.profile-account {
+  border-bottom: 2px solid #ccc; /* Add bottom border */
+  padding-bottom: 10px; 
+  margin-left: 15px;/* Add padding to separate from content */
+}
+
+
+/* Notification Area */
+.notifications-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 75%;
+  height: 100vh; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Individual Notification */
+.notification-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Notification Text */
+.notification-text {
+  font-size: 16px;
+}
+
+/* Notification Content */
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Empty Area */
+.empty-area {
+  width: 25%;
+}
+.order-container {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%; /* Take 96% of the parent container width */
+  height: 250%; /* Take 90% of the parent container height */
+  overflow-y: hidden; /* Hide overflow content */
+  background-color: #ffffff; /* Set background color */
+  padding: 20px; /* Add padding */
+  border-radius: 5px; /* Add border radius */
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.order-item img {
+  width: 80px; /* Adjust image width */
+  height: 80px; /* Adjust image height */
+  margin-right: 20px; /* Add margin between image and text */
+  border-radius: 5px; /* Add border radius */
+}
+
+.order-item p {
+  text-align: right;
+  margin-left: 50px;
+  margin-right: 50px; /* Align the text to the right */
+}
+
+
+.order-item button {
+  padding: 10px 20px; /* Adjust button padding */
+  margin-left: auto; /* Push buttons to the right */
+  border: none;
+  border-radius: 5px;
+  background-color: #1ba5be;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-item button + button {
+  margin-left: 10px; /* Add margin between buttons */
+}
+
+
+.reviews-container {
+  padding: 20px;
+}
+
+.reviews-header {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reviews-container .input-container {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+.reviews-container .input-container button:hover {
+  background-color: #14768f;
+}
+
+.reviews-container .input-container input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  height: 150px; /* Increase height */
+  width: calc(100% - 100px); /* Reduce width */
+}
+
+
+
+.reviews-container .input-container button {
+  padding: 15px 30px; /* Adjust padding */
+  background-color: #1ba5be; /* Add background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+

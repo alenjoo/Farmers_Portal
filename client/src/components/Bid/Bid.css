@@ -1,0 +1,123 @@
+.bidpage {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #afa9a9;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.navbar2 {
+  background-color: #171f3a;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-section {
+  flex: 1;
+  margin-top: 20px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bid-first-half {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.bid-first-half input[type="text"],
+.bid-first-half input[type="number"],
+.bid-first-half input[type="datetime-local"],
+.bid-first-half textarea {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #070606;
+  border-radius: 5px;
+}
+
+.bid-first-half input[type="text"]:not(:last-child),
+.bid-first-half input[type="number"]:not(:last-child),
+.bid-first-half input[type="datetime-local"]:not(:last-child),
+.bid-first-half textarea:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.image-container {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.image-container .selected-images {
+  display: flex;
+}
+
+.image-container img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.image-container .half-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container .half-container input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.image-container .half-container .selected-images {
+  display: flex;
+}
+
+.image-container .half-container img {
+  width: 300px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.form-section button[type="submit"] {
+  background-color: #171f3a;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-section button[type="submit"]:hover {
+  background-color: #0e1427;
+}
+
+.form-section p {
+  color: red;
+  margin-top: 10px;
+}
